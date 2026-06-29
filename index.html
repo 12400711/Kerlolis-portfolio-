@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio - Frontend Developer">
+    <title>kerolos yousef| architect</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Portfo<span>lio.</span></a>
+            <button id="theme-toggle" class="theme-toggle" title="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <!-- <li><a href="#services" class="nav-link">Services</a></li> -->
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-greeting">Hello, I'm</span>
+                    <h1 class="hero-name">kerolos yousef</h1>
+                    <h2 class="hero-title">Architect</h2>
+                    <p class="hero-description">
+                        I view architecture as a powerful tool to shape better human experiences. My
+                        work balances strong conceptual thinking with precise architectural visualization,
+                        always exploring forward-thinking design solutions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Contact Me</a>
+
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="./images/hero page.png" alt="Moheb Yani - Frontend Developer"
+                            onerror="this.src='https://via.placeholder.com/400x400?text=Profile+Photo'">
+                        <div class="image-border"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-link">
+                <span></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <span class="section-divider"></span>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="./images/about me.jfif" alt="About Me">
+                </div>
+                <div class="about-text">
+                    <h3>I'm a Passionate Architect</h3>
+                    <p>
+                        For as long as I can remember, I’ve been fascinated by how spaces influence human emotion and
+                        behavior.
+                        This fascination evolved into a core philosophy: architecture is a profound tool for shaping
+                        better human experiences.
+                    </p>
+                    <p>
+                        My design process thrives on the balance between two worlds—the abstract and the concrete. I
+                        anchor my projects in strong conceptual thinking, but I believe a great concept only shines when
+                        paired with precise architectural visualization.
+                    </p>
+                    <p>
+                        By leveraging advanced visualization tools, I bring forward-thinking design solutions to life,
+                        ensuring that spatial flow, light, and materiality are meticulously planned. I am dedicated to
+                        pushing the envelope of modern architecture, creating spaces that inspire, connect, and endure.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>B.S. Architecture</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Cairo, Egypt</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>kerolles589@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Skills</h2>
+                <span class="section-divider"></span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+                    <h3>Architectural Design</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 95%"></div>
+                    </div>
+                    <span class="skill-percentage">95%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3>Concept Development</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-bezier-curve"></i>
+                    </div>
+                    <h3>Urban Design & Planning</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-bimobject"></i>
+                    </div>
+                    <h3>3D Modeling Rendering</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-draw-polygon"></i>
+                    </div>
+                    <h3>Working Drawings</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-yelp"></i>
+                    </div>
+                    <h3>Autodesk Revit, AutoCAD</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                    </div>
+                    <h3>Rhino 3D,PhotoSheop,sktchUp</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Projects</h2>
+                <span class="section-divider"></span>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/project 1.jpg" alt=""
+                            onerror="this.src='https://via.placeholder.com/400x250?text=Project+1'">
+                        <div class="project-overlay">
+                            <a target="_blank"
+                                href="https://drive.google.com/drive/folders/1ZvG468GyCOSdYoBuCOUavE7UN_Ga5pSC"
+                                class="project-link"><i class="fas fa-external-link-alt"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Architecture of Islamic Communities</h3>
+                        <div class="project-buttons">
+                            <a target="_blank"
+                                href="https://drive.google.com/drive/folders/1ZvG468GyCOSdYoBuCOUavE7UN_Ga5pSC"
+                                class="btn-project">More details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/project 2.jpg" alt=""
+                            onerror="this.src='https://via.placeholder.com/400x250?text=Project+1'">
+                        <div class="project-overlay">
+                            <a target="_blank"
+                                href="https://drive.google.com/drive/folders/1_EzTOGKWRNH9HLLZFi2jTqys0Q_MWA7Z"
+                                class="project-link"><i class="fas fa-external-link-alt"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>DIYAR</h3>
+                        <div class="project-buttons">
+                            <a target="_blank"
+                                href="https://drive.google.com/drive/folders/1_EzTOGKWRNH9HLLZFi2jTqys0Q_MWA7Z"
+                                class="btn-project">More details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/project 3.jpg" alt=""
+                            onerror="this.src='https://via.placeholder.com/400x250?text=Project+1'">
+                        <div class="project-overlay">
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1gFcRCG3NUqzQNvMfsEAeJaQyiFhUxbt2/view?usp=drive_link"
+                                class="project-link"><i class="fas fa-external-link-alt"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Environmental Design and Planning</h3>
+                        <div class="project-buttons">
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1gFcRCG3NUqzQNvMfsEAeJaQyiFhUxbt2/view?usp=drive_link"
+                                class="btn-project">More details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/project 4.jpg" alt=""
+                            onerror="this.src='https://via.placeholder.com/400x250?text=Project+1'">
+                        <div class="project-overlay">
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1QU-l-6-cw8yWrnwRRPQa60621CfgwgPD/view?usp=drive_link"
+                                class="project-link"><i class="fas fa-external-link-alt"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>LANDSCAPE DESIGN</h3>
+                        <div class="project-buttons">
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1QU-l-6-cw8yWrnwRRPQa60621CfgwgPD/view?usp=drive_link"
+                                class="btn-project">More details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/project 5.jpg" alt=""
+                            onerror="this.src='https://via.placeholder.com/400x250?text=Project+1'">
+                        <div class="project-overlay">
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1vEfOrz4OmI3eo4p8-NgMFgZkmpL_RkYi/view?usp=drive_link"
+                                class="project-link"><i class="fas fa-external-link-alt"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>OPERA HOUSE DE IGN Communities</h3>
+                        <div class="project-buttons">
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1vEfOrz4OmI3eo4p8-NgMFgZkmpL_RkYi/view?usp=drive_link"
+                                class="btn-project">More details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/project 6.jpg" alt=""
+                            onerror="this.src='https://via.placeholder.com/400x250?text=Project+1'">
+                        <div class="project-overlay">
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/150rsk4WYjFGtSwVbOeUAe4bAflqCdk5p/view?usp=drive_link"
+                                class="project-link"><i class="fas fa-external-link-alt"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>URBAN PLANNING IN NORTH COST </h3>
+                        <div class="project-buttons">
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/150rsk4WYjFGtSwVbOeUAe4bAflqCdk5p/view?usp=drive_link"
+                                class="btn-project">More details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/project 7.jpg" alt=""
+                            onerror="this.src='https://via.placeholder.com/400x250?text=Project+1'">
+                        <div class="project-overlay">
+                            <a target="_blank"
+                                href="https://drive.google.com/drive/folders/1BUx2v5qbp3qT9PaAktNBh4iBdXCbfodb"
+                                class="project-link"><i class="fas fa-external-link-alt"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>working drawing OPERA HOUSE PROJECT</h3>
+                        <div class="project-buttons">
+                            <a target="_blank"
+                                href="https://drive.google.com/drive/folders/1BUx2v5qbp3qT9PaAktNBh4iBdXCbfodb"
+                                class="btn-project">More details</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <!-- <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Services</h2>
+                <span class="section-divider"></span>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>I build fast, responsive, and user-friendly websites using modern HTML, CSS, and JavaScript
+                        technologies.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Website Design</h3>
+                    <p>I create beautiful, modern designs that capture your brand identity and engage your target
+                        audience.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Websites</h3>
+                    <p>I ensure your website looks great and functions perfectly on all devices, from desktop to mobile.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Landing Pages</h3>
+                    <p>I design and develop high-converting landing pages that help you achieve your business goals.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Me</h2>
+                <span class="section-divider"></span>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Get In Touch</h3>
+                    <p>Feel free to contact me if you have any questions or need a quote for your project.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Cairo - Egypt</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>kerolles589@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+20 1015977279</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+
+                        <a href="https://www.linkedin.com/in/kyrillos-yousef-4a9809239/" class="social-link"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                    <div class="form-success" id="form-success">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Message sent successfully!</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#home">Portfo<span>lio.</span></a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/12400711?tab=repositories" class="social-icon" title="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/moheb-yani-730681219/" class="social-icon" title="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+
+                </div>
+                <p class="footer-text">&copy; 2026 Moheb Yani. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
