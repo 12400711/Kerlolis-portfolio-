@@ -1,0 +1,104 @@
+/* Dark Mode Styles */
+[data-theme="dark"],
+body.dark {
+  --white: #0f172a;
+  --light-color: #1e293b;
+  --gray-100: #334155;
+  --gray-200: #475569;
+  --gray-300: #64748b;
+  --gray-400: #94a3b8;
+  --gray-500: #e2e8f0;
+  --gray-600: #f1f5f9;
+  --dark-color: #f8fafc;
+}
+
+[data-theme="dark"] .navbar,
+body.dark .navbar {
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+[data-theme="dark"] .hero,
+body.dark .hero {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+[data-theme="dark"] .skills,
+body.dark .skills {
+  background: #1e293b;
+}
+
+[data-theme="dark"] .services,
+body.dark .services {
+  background: #1e293b;
+}
+
+[data-theme="dark"] .contact-form,
+body.dark .contact-form {
+  background: #334155;
+}
+
+[data-theme="dark"] .skill-card,
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .service-card,
+body.dark .skill-card,
+body.dark .project-card,
+body.dark .service-card {
+  background: #1e293b;
+}
+
+[data-theme="dark"] .project-tags span,
+body.dark .project-tags span {
+  background: #475569;
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .service-icon,
+body.dark .service-icon {
+  background: #475569;
+}
+
+[data-theme="dark"] .contact-item i,
+body.dark .contact-item i,
+[data-theme="dark"] .social-link,
+body.dark .social-link {
+  background: #475569;
+}
+
+[data-theme="dark"] .theme-toggle,
+body.dark .theme-toggle {
+  background: #475569;
+  color: #f1f5f9;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  color: #1e293b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+  .theme-toggle {
+    top: 80px;
+    right: 20px;
+  }
+}
